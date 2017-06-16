@@ -8,10 +8,10 @@ function syncTaskD(done) { console.log('D'); done(); }
 function asyncTaskE(done) { setTimeout(function() { console.log('E'); done();}, 2000) };
 
 * Question: Async Task Runner
-function TaskRunner() {
+*function TaskRunner() {
 
 }
 
-TaskRunner.prototype.push = function (task,taskValue) {
+*TaskRunner.prototype.push = function (task,taskValue) {
 
 }
