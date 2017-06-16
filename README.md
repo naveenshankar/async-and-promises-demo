@@ -7,7 +7,7 @@ function asyncTaskC(done) { setTimeout(function() { console.log('C'); done();}, 
 function syncTaskD(done) { console.log('D'); done(); }
 function asyncTaskE(done) { setTimeout(function() { console.log('E'); done();}, 2000) };
 
-// Question: Async Task Runner
+* Question: Async Task Runner
 function TaskRunner() {
 
 }
