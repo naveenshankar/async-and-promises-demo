@@ -1,0 +1,18 @@
+#run_task{
+    display:block;
+    width: 100px;
+    margin: auto;
+}
+
+label{
+    font-size:10px;
+    display:inline-block;
+}
+
+#input,#output{
+    display:inline-block;
+    width:49%;
+    margin-top:30px;
+    border-right:1px solid black;
+    vertical-align:top;
+}
