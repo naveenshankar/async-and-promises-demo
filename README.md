@@ -1,6 +1,6 @@
 # async-and-promises-demo
 
-// Async Tasks
+* Async Tasks
 function syncTaskA(done) { console.log('A'); done(); }
 function asyncTaskB(done) { setTimeout(function() { console.log('B'); done();}, 1000) };
 function asyncTaskC(done) { setTimeout(function() { console.log('C'); done();}, 4000) };
