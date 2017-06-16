@@ -1,4 +1,3 @@
-// UBER INTERVIEW
 
 // Async Tasks
 function syncTaskA(done) { console.log('A'); done(); }
