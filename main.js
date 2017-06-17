@@ -38,16 +38,15 @@ TaskRunner.prototype.push = function (task,taskValue) {
 //SOLUTION 1 WITH ARRAY REDUCE
 TaskRunner.prototype.runTasksWithReduceSynchronously1 = function(){  this.tasks.reduce(function(acc,currVal,currIndex,arr)
  {
- 		//console.log('currIndex',currIndex);
+    //console.log('currIndex',currIndex);
     //console.log('acc',acc);
     if(currIndex == 1){
     	return acc().then(currVal);
-      //return arr[0]().then(currVal);
     }
     else{
     	return acc.then(currVal);
     }
- });//no acc means its the first value of arr
+ });//no acc means acc = arr[0] when currIndex == 1
 }
 
 TaskRunner.prototype.runTasksWithReduceSynchronously2 = function(){  this.tasks.reduce(function(acc,currVal,currIndex,arr)
