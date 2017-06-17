@@ -46,12 +46,12 @@ TaskRunner.prototype.runTasksWithReduceSynchronously1 = function(){  this.tasks.
     else{
     	return acc.then(currVal);
     }
- });//no acc means acc = arr[0] when currIndex == 1
+ });//no acc means acc = arr[0] when currIndex == 1 and arr LOOPS FROM 1 TO END OF THE ARRAY
 }
 
 TaskRunner.prototype.runTasksWithReduceSynchronously2 = function(){  this.tasks.reduce(function(acc,currVal,currIndex,arr)
  {
- 		//console.log('currIndex',currIndex);
+    //console.log('currIndex',currIndex);
     //console.log('acc',acc);
     if(currIndex == 0){
       return arr[0]();
@@ -59,7 +59,7 @@ TaskRunner.prototype.runTasksWithReduceSynchronously2 = function(){  this.tasks.
     else{
     	return acc.then(currVal);
     }
- },"firstValueforAccumulator");
+ },"firstValueforAccumulator"); //acc means arr LOOPS FROM 0 TO END OF THE ARRAY
 }
 
 TaskRunner.prototype.runTasksWithReduceSynchronously3 = function(){  this.tasks.reduce(function(acc,currVal,currIndex,arr)
