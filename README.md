@@ -15,3 +15,6 @@ function asyncTaskE(done) { setTimeout(function() { console.log('E'); done();}, 
 * TaskRunner.prototype.push = function (task,taskValue) {
 
   }
+
+SOLUTION:
+https://naveenshankar.github.io/async-and-promises-demo/
